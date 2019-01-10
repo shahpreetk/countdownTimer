@@ -1,210 +1,209 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Coming Soon</title>
-            <!--<link rel="stylesheet" href="countdownTimer.css">-->
-            <style>
-                    * {
-                        margin: 0;
-                        padding: 0;
-                    }
-                    .imgbox {
-                        display: grid;
-                        height: 100%;
-                    }
-                    .center-fit {
-                        max-width: 100%;
-                        max-height: 100vh;
-                        margin: auto;
-                    }
-                      
-body, html {
-  height: 100%;
-  margin: 0;
-}
 
-.bgimg {
-  background-image: url('pancham.png');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-  
-}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coming Soon</title>
+    <!--<link rel="stylesheet" href="countdownTimer.css">-->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-.topleft #container{
-    margin-left: 30%;
-    width: 400px;
-    height: 400px;
-    padding: 0;
-    box-sizing: border-box;
-    align-content: center;
-    /*background-image:linear-gradient( #424f84, skyblue);*/
-}
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
 
-*:after,
-*:before{
-    box-sizing: inherit;
-}
+        .center-fit {
+            max-width: 100%;
+            max-height: 100%;
+            margin: auto;
+        }
 
-#spooky{
-    margin: 10% auto;
-    width: 80%;
-    height: 80%;
-    animation: floaty 2s infinite;
-}
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
 
-#spooky #body {
-    position: relative;
-    margin: 50px auto 0;
-    width: 180px;
-    height: 220px;
-    background: #f2fbf1;
-    border-top-left-radius: 90px;
-    border-top-right-radius: 90px;
-}
+        .topleft #container {
+            margin-left: 30%;
+            width: 400px;
+            height: 400px;
+            padding: 0;
+            box-sizing: border-box;
+            align-content: center;
+            /*background-image:linear-gradient( #424f84, skyblue);*/
+        }
 
-#spooky #body:before,
-#spooky #body:after{
-    content: " ";
-    position: absolute;
-    top: 130px;
-    display: inline-block;
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: #f2fbf1;
-    animation: floaty .2s infinite;
-}
+        *:after,
+        *:before {
+            box-sizing: inherit;
+        }
 
-#spooky #body:before{
-    left: -18px;
-}
-#spooky #body:after{
-    right: -18px;
-}
+        #spooky {
+            margin: 10% auto;
+            width: 80%;
+            height: 80%;
+            animation: floaty 2s infinite;
+        }
 
-#spooky #body #eyes{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 90px 0 0;
-    width: 90px;
-    height: 20px;
-}
+        #spooky #body {
+            position: relative;
+            margin: 50px auto 0;
+            width: 180px;
+            height: 220px;
+            background: #f2fbf1;
+            border-top-left-radius: 90px;
+            border-top-right-radius: 90px;
+        }
 
-#spooky #body #eyes:before,
-#spooky #body #eyes:after{
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 30px;
-    background: #252c49;
-    border-radius: 50%;
-}
+        #spooky #body:before,
+        #spooky #body:after {
+            content: " ";
+            position: absolute;
+            top: 130px;
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #f2fbf1;
+            animation: floaty .2s infinite;
+        }
 
-#spooky #body #mouth{
-    background: #252c49;
-    margin: 25px auto 0;
-    width: 60px;
-    height: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
+        #spooky #body:before {
+            left: -18px;
+        }
 
-#spooky #body #mouth:before{
-    content: " ";
-    display: block;
-    background: #fff;
-    margin-left: 20px;
-    width: 10px;
-    height: 10px;
-}
+        #spooky #body:after {
+            right: -18px;
+        }
 
-#spooky #body #feet{
-    position: absolute;
-    display: flex;
-    bottom: -18px;
-    width: 180px;
-    height: 36px;
-}
+        #spooky #body #eyes {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 90px 0 0;
+            width: 90px;
+            height: 20px;
+        }
 
-#spooky #body #feet > *,
-#spooky #body #feet::before,
-#spooky #body #feet::after{
-    content: " ";
-    width: 36px;
-    height: 36px;
-    background: #f2fbf1;
-    border-radius: 50%;
-}
+        #spooky #body #eyes:before,
+        #spooky #body #eyes:after {
+            content: " ";
+            display: block;
+            width: 30px;
+            height: 30px;
+            background: #252c49;
+            border-radius: 50%;
+        }
 
-#shadow{
-    margin: -90px auto 0;
-    background: #252c49;
-    width: 180px;
-    height: 40px;
-    border-radius: 50%;
-    animation: zoomy 2s infinite;
-}
+        #spooky #body #mouth {
+            background: #252c49;
+            margin: 25px auto 0;
+            width: 60px;
+            height: 30px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+        }
 
-@keyframes floaty{
-    0%, 100%{
-        transform: translateY(0);    
-    }
+        #spooky #body #mouth:before {
+            content: " ";
+            display: block;
+            background: #fff;
+            margin-left: 20px;
+            width: 10px;
+            height: 10px;
+        }
 
-    50%{
-        transform: translateY(-20px);
-    }
-}
+        #spooky #body #feet {
+            position: absolute;
+            display: flex;
+            bottom: -18px;
+            width: 180px;
+            height: 36px;
+        }
 
-@keyframes zoomy{
-    0%, 100%{
-        transform: scale(1);
-    }
+        #spooky #body #feet>*,
+        #spooky #body #feet::before,
+        #spooky #body #feet::after {
+            content: " ";
+            width: 36px;
+            height: 36px;
+            background: #f2fbf1;
+            border-radius: 50%;
+        }
 
-    50%{
-        transform: scale(0.8);
-    }
-}
+        #shadow {
+            margin: -90px auto 0;
+            background: #252c49;
+            width: 180px;
+            height: 40px;
+            border-radius: 50%;
+            animation: zoomy 2s infinite;
+        }
 
-  
+        @keyframes floaty {
 
-                </style>
-    </head>
-    <body>
-            
-                    
-                    <div id="container">
-                            <img class="center-fit" src='pancham.png'>
-                            <div id="spooky" style="margin-top: -600px;">
-                                    
-                                <div id="body">
-                                    <div id="eyes">
-        
-                                    </div>
-                                    <div id="mouth">
-                                        
-                                    </div>
-                                    <div id="feet">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div> 
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            <div id="shadow"></div>
-                        </div>
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes zoomy {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(0.8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="container">
+        <img class="center-fit" src='pancham.png'>
+        <div id="name">
+            <h1 style="margin-top: 10%; color: ivory;">WE'RE GONNA BE HERE SOON</h1>
+        </div>
+        <div id="spooky" style="margin-top: -600px;">
+
+            <div id="body">
+                <div id="eyes">
+
                 </div>
-                
-            
-    </body>
+                <div id="mouth">
+
+                </div>
+                <div id="feet">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+
+            </div>
+        </div>
+        <div id="shadow"></div>
+    </div>
+    </div>
+
+
+</body>
 <!--    <script src="countdownTimer.js"></script>-->
+
 </html>
